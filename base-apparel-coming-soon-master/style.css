@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+.header{
+height: auto;
+padding: 30px;
+margin-top: 20px;
+margin-left: 10px;
+}
+
+.container{
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .left-side h1 span{
+
+    text-transform: uppercase;
+    font-weight: 150;
+    color:  hsl(0, 36%, 70%);
+    letter-spacing: 0.5rem;
+    }
+.container .left-side h1{
+text-transform: uppercase;
+color: hsl(0, 6%, 24%) ;
+letter-spacing: 0.5rem;
+}
+
+.container .left-side p {
+
+    margin: 0 auto;
+    max-width: 400px;
+    color:hsl(0, 36%, 70%) ;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.left-side{
+background-color: white;
+font-family: 'Josefin Sans';
+font-size: 15px;
+width: 100%;
+height: auto;
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 0px;
+padding-left: 30px;
+
+}
+.right-side{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(16, 250, 16);
+    background-image: url(./images/hero-mobile.jpg);
+    background-size: cover;
+    margin-right: 0px;
+    }
+
+    .container form{
+      position: relative;
+      display: block;
+     margin: 0 auto;
+     height: 55px;
+     width: 100%;
+
+    }
+    .container form input{
+
+    font-family: Josefin Sans;    
+    border-radius: 50px;
+     outline: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+     top: 0;
+    padding-left: 30px;
+
+    }
+    .container form .invalid {
+
+position: absolute;
+left:30px;
+top: 40px;
+display: none;
+    }
+.container form.error .invalid {
+
+    display: block;
+    }
+    .container form button{
+     cursor: pointer;
+     position: absolute;     
+     right: 0;
+     height: 100%;
+     top: 0;
+     width: 60px;
+     border-radius: 50px;
+     background-image: linear-gradient(135deg,hsl(0,80%,86%),hsl(0,74%,74%));
+     border: none;
+            }
+
+
+@media screen and (min-width: 768px) {
+        .header{
+            position: absolute;
+            padding-left: 10%;
+        }
+    .container{
+     flex-direction: row;
+     padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    } 
+
+
+.left-side {
+background-image: url(./images/bg-pattern-desktop.svg);
+text-align: left;
+padding-left: 15%;
+
+}
+.right-side{
+margin-right: 0px;
+    width: 900px;
+height: 100vh;
+background-image: url(./images/hero-desktop.jpg);
+}
+}
